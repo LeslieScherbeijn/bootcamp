@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Article;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Http\Request;
 
 class ArticleController extends Controller
@@ -27,32 +28,49 @@ class ArticleController extends Controller
     //Article Database
     public function create()
     {
-        return view('article.create');
+        if (Gate::allows('create-article')) {
+            return view('article.create');
+        } else {
+            abort('403');
+        }
     }
 
     //Store the created article in the
     //Article database
     public function store()
     {
-        Article::create($this->validateArticle());
+        if (Gate::allows('store-article')) {
+            Article::create($this->validateArticle());
+            return redirect('/article');
+        } else {
+            abort('403');
+        }
 
-        return redirect('/article');
+
     }
 
     //Edit an existing article within the
     //Article database
     public function edit(Article $article)
     {
-        return view('article.edit', ['articles' => $article]);
+        if (Gate::allows('edit-article')) {
+            return view('article.edit', ['articles' => $article]);
+        } else {
+            abort('403');
+        }
     }
 
     //Save the edited article in the
     //Article database
     public function update(Article $article)
     {
-        $article->update($this->validateArticle());
+        if (Gate::allows('update-article')) {
+            $article->update($this->validateArticle());
 
-        return redirect('/article' . $article->Id);
+            return redirect('/article' . $article->Id);
+        } else {
+            abort('403');
+        }
 
     }
 
@@ -60,9 +78,13 @@ class ArticleController extends Controller
 //Article database
     public function destroy(Article $article)
     {
-        $article->delete();
+        if (Gate::allows('delete-article')) {
+            $article->delete();
 
-        return redirect('/article');
+            return redirect('/article');
+        } else {
+            abort('403');
+        }
 
     }
 

@@ -1,5 +1,5 @@
 <?php
-
+Auth::routes();
 
 /**
  * Public Routes
@@ -35,8 +35,6 @@ Route::resource('article', 'ArticleController');
 //Grade database
 Route::resource('grade', 'GradeController');
 
-
-Auth::routes();
 
 Route::get('/home', 'HomeController@index')
     ->name('home')
