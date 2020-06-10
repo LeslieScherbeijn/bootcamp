@@ -7,9 +7,9 @@
             <div class="card-header bg-dark">
                 <h1 class="display-3 headerText">
                     @auth()
-                        Hello there, {{ Auth::user()->name }} :)
+                        Welcome, {{ Auth::user()->name }} :)
                     @else
-                        Hello there
+                        Welcome
                     @endauth
                 </h1>
             </div>
@@ -20,16 +20,16 @@
                 </div>
                 <div class="text-center">
                     <a href="https://www.instagram.com/leslie_s2001/" target="_blank">
-                        <i class="fab fa-instagram icons" ></i>
+                        <i class="fab fa-instagram icons"></i>
                     </a>
                     <a href="https://www.linkedin.com/in/leslie-scherbeijn-020231173/" target="_blank">
-                        <i class="fab fa-linkedin icons" ></i>
+                        <i class="fab fa-linkedin icons"></i>
                     </a>
                     <a href="https://www.facebook.com/leslie.scherbeijn" target="_blank">
-                        <i class="fab fa-facebook-square icons" ></i>
+                        <i class="fab fa-facebook-square icons"></i>
                     </a>
                     <a href="https://github.com/LeslieScherbeijn" target="_blank">
-                        <i class="fab fa-github icons" ></i>
+                        <i class="fab fa-github icons"></i>
                     </a>
                 </div>
             </div>
