@@ -7,7 +7,7 @@
             <div class="card-header bg-dark">
                 <h1 class="display-3 headerText">
                     @auth()
-                        Welcome, {{ Auth::user()->name }} :)
+                        Hello there, {{ Auth::user()->name }} :)
                     @else
                         Welcome :)
                     @endauth
