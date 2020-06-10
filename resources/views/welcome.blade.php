@@ -9,7 +9,7 @@
                     @auth()
                         Hello there, {{ Auth::user()->name }} :)
                     @else
-                        Welcome :)
+                        Hello there
                     @endauth
                 </h1>
             </div>
