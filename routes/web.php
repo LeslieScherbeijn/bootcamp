@@ -1,6 +1,12 @@
 <?php
 Auth::routes();
 
+Route::get('/complete-registration', 'Auth\RegisterController@completeRegistration');
+
+Route::post('/2fa', function () {
+    return redirect(URL()->previous());
+})->name('2fa')->middleware('2fa');
+
 /**
  * Public Routes
  */
