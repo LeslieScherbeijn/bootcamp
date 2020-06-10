@@ -15,8 +15,7 @@
                 <ul class="list-group float-right w-50 list-group-flush p-2">
                     @foreach($articles as $article)
                         <div class="list-group-item list-group-item-action display-4">
-                            <a href="/article/{{ $article->id }}>{{ $article->title }}"
-                            >{{ $article->title }}</a>
+                            <a href="/article/{{ $article->id }}">{{ $article->title }}</a>
                         </div>
 
                     @endforeach

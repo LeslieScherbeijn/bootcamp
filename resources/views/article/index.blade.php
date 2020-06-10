@@ -20,8 +20,9 @@
                     @foreach($article as $article)
                         <div class="list-group-item list-group-item-action display-4">
                             <a class="text-decoration-none" style="color: black;"
-                               href="{{ route('article.show', $article) }}>{{ $article->title }}">{{ $article->title }}
+                               href="{{ route('article.show', $article) }}">{{ $article->title }}
                                 <br> {{ $article->excerpt }}
+
                                 @can('edit-article')
                                     <a href="article/{{$article->id}}/edit"><i class="fas fa-edit float-right"
                                                                                style="font-size: 2vh"></i></a>
