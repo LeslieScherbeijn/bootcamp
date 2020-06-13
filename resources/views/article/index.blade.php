@@ -4,7 +4,7 @@
 
 
     <div class="container-fluid text-center">
-        <div class="card w-auto text-center m-5   rounded" style="height: 100vh;">
+        <div class="card w-100 text-center m-5 h-100  rounded">
             <div class="card-header bg-dark">
                 <h1 class="display-3 headerText">Here are all my written articles
                     @can('create-article')

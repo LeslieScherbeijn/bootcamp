@@ -1,7 +1,5 @@
 /*Basic HTML classes*/
-html {
-    overflow: hidden;
-}
+
 
 html, body {
     font-family: 'Roboto', sans-serif;;
@@ -36,24 +34,39 @@ html, body {
 /*Media Queries*/
 /*Extra small devices (smartphones, <600px)*/
 
-@media only screen and (max-width: 600px) {…}
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 100vw !important;
+    }
+    .card-header {
+
+    }
+}
 
 
 /*Small devices (large smartphones and portrait tablets >= 600px)*/
 
-@media only screen and (min-width: 600px) {…}
+@media only screen and (min-width: 600px) {
+    …
+}
 
 
 /*Medium devices (landscape tablets >= 768px)*/
 
-@media only screen and (min-width: 768px) {…}
+@media only screen and (min-width: 768px) {
+    …
+}
 
 
 /*Large devices (laptops and desktops, >=600px)*/
 
-@media only screen and (min-width: 992px) {…}
+@media only screen and (min-width: 992px) {
+    …
+}
 
 
 /*Extra Large devices (laptops and desktops <600px)*/
 
-@media only screen and (min-width: 1200px) {…}
+@media only screen and (min-width: 1200px) {
+    …
+}

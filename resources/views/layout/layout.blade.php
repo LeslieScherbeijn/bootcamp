@@ -9,13 +9,9 @@
     <script src="https://kit.fontawesome.com/62b4c75423.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-
 </head>
-
 
 <body>
 
@@ -44,7 +40,6 @@
                    href="/article" accesskey="1" title="">Blog</a>
             </li>
         </ul>
-
         <ul class="navbar-nav ml-auto">
             <!-- Authentication Links -->
             @guest
@@ -77,7 +72,6 @@
                 </li>
             @endguest
         </ul>
-
     </div>
 </nav>
 
