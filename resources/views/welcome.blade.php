@@ -3,23 +3,28 @@
 @section('content')
 
     <div class="container-fluid d-flex justify-content-center text-center">
-        <div class="card w-auto h-auto p-0 m-xs-2 m-sm-2 m-md-5 m-xl-5 rounded col-xs-12 col-md-8">
+
+        <div class="card w-100 h-100 p-0 m-0 rounded">
+
             <div class="card-header bg-dark ">
                 <h1 class="display-Xl-4 headerText">
-
                     @auth()
-                        Welcome, {{ Auth::user()->name }} :)
+                        Welcome, {{ Auth::user()->name }}
                     @else
                         Welcome
                     @endauth
                 </h1>
             </div>
+
             <div class="card-body text-center">
+
                 <div>
                     <img class=" img-fluid  rounded mt-5" src="/assets/images/background/giphy.gif">
                     <p class="display-4 mt-5 ">Feel free to look around</p>
                 </div>
+
                 <br>
+
                 <div class="text-center d-flex justify-content-center">
                     <div class=" col-xs-12 col-md-8">
                         <a href="https://www.instagram.com/leslie_s2001/" target="_blank">
@@ -34,6 +39,7 @@
                         <a href="https://github.com/LeslieScherbeijn" target="_blank">
                             <i class="fab fa-github icons"></i>
                         </a>
+
                     </div>
                 </div>
             </div>
