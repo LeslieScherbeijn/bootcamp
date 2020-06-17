@@ -1,7 +1,5 @@
 /*Basic HTML classes*/
-html {
-    overflow: hidden;
-}
+
 
 html, body {
     font-family: 'Roboto', sans-serif;;
@@ -15,7 +13,13 @@ html, body {
 /*Custom classes*/
 .headerText {
     color: whitesmoke;
+    margin: 0 !important;
     /*font-weight: bold;*/
+}
+
+.hrefStyle {
+    color: black;
+    font-weight: bold !important;
 }
 
 .icons {
@@ -36,24 +40,55 @@ html, body {
 /*Media Queries*/
 /*Extra small devices (smartphones, <600px)*/
 
-@media only screen and (max-width: 600px) {…}
+@media only screen and (max-width: 600px) {
+    .card {
+        margin-top: 5vh !important;
+        height: 100vh !important;
+        width: 100vw !important;
+    }
+}
 
 
 /*Small devices (large smartphones and portrait tablets >= 600px)*/
 
-@media only screen and (min-width: 600px) {…}
+@media only screen and (min-width: 600px) {
+    .card {
+        /*margin-left: 0vw !important;*/
+        /*margin-right: 0vw !important;*/
+        margin-top: 5vh !important;
+        height: 100vh !important;
+        width: 100vw !important;
+    }
+}
 
 
 /*Medium devices (landscape tablets >= 768px)*/
 
-@media only screen and (min-width: 768px) {…}
+@media only screen and (min-width: 768px) {
+    .card {
+        margin-top: 10vh !important;
+        height: 100vh !important;
+    }
+}
 
 
 /*Large devices (laptops and desktops, >=600px)*/
 
-@media only screen and (min-width: 992px) {…}
+@media only screen and (min-width: 992px) {
+    .card {
+        margin: 2vw !important;
+        width: 100vw !important;
+        height: 100vh !important;
+    }
+}
 
 
 /*Extra Large devices (laptops and desktops <600px)*/
 
-@media only screen and (min-width: 1200px) {…}
+@media only screen and (min-width: 1200px) {
+    .card {
+        margin: 2vw !important;
+        width: 100vw !important;
+        height: 100vh !important;
+    }
+}
