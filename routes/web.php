@@ -1,5 +1,5 @@
 <?php
-Auth::routes();
+Auth::routes(['verify' => true]);
 
 Route::get('/complete-registration', 'Auth\RegisterController@completeRegistration');
 

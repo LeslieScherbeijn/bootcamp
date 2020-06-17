@@ -13,7 +13,13 @@ html, body {
 /*Custom classes*/
 .headerText {
     color: whitesmoke;
+    margin: 0 !important;
     /*font-weight: bold;*/
+}
+
+.hrefStyle {
+    color: black;
+    font-weight: bold !important;
 }
 
 .icons {
@@ -60,8 +66,6 @@ html, body {
 
 @media only screen and (min-width: 768px) {
     .card {
-        /*margin-left: 0px !important;*/
-        /*margin-right: 0vw !important;*/
         margin-top: 10vh !important;
         height: 100vh !important;
     }
