@@ -32,6 +32,11 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 });
 
+//Route to my instagram feed
+Route::get('/instaFeed' , function {
+    return view('instaFeed');
+});
+
 //The routes for the Articles from the
 //Article database
 Route::resource('article', 'ArticleController');
