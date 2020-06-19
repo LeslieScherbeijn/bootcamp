@@ -32,15 +32,7 @@
                 <a class="nav-link {{ Request::path() === 'article' ? 'active' : ""}}"
                    href="/article" accesskey="1" title="">Blog</a>
             </li>
-            {{--            <li class="nav-item">--}}
-            {{--                <a class="nav-link {{ Request::path() === 'profile' ? 'active' : ""}}"--}}
-            {{--                   href="/profile" accesskey="1" title="">Profile</a>--}}
-            {{--            </li>--}}
-
-            {{--            <li class="nav-item">--}}
-            {{--                <a class="nav-link {{ Request::path() === 'instaFeed' ? 'active' : ""}}"--}}
-            {{--                   href="/instaFeed" accesskey="1" title="">My pictures</a>--}}
-            {{--            </li>--}}
+           
 
 
         </ul>
