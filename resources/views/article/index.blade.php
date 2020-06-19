@@ -31,7 +31,7 @@
                     <div>
                         @foreach($article as $article)
                             <li class="nav-item">
-                                <a class="nav-link hrefStyle" href="{{ route('article.show', $article) }}">
+                                <a class="nav-link" href="{{ route('article.show', $article) }}">
                                     <h1 class="display-XL-2">{{$article->title}}
                                     </h1>
                                     <p>
