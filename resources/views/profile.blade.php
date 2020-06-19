@@ -5,7 +5,7 @@
 
     <div class="container-fluid d-flex justify-content-center text-center">
 
-        <div class="card w-100 h-100 p-0 m-0 rounded">
+        <div class="card h-auto p-0 m-0 rounded">
 
             <div class="card-header bg-dark">
                 <h1 class="display-3 headerText">This is me</h1>
@@ -17,6 +17,7 @@
                         <img class="img-fluid float-left" src="./assets/images/profile/profilepic.jpeg" width="500"
                              height="700"
                              alt="This is me">
+
                     </div>
 
                     <div class="col-sm-8">

@@ -22,28 +22,29 @@
     </button>
     <div class="collapse navbar-collapse w-100" id="navbarNav">
         <ul class="navbar-nav">
-            <li class="nav-item">
 
+            <li class="nav-item">
                 <a class=" nav-link {{ Request::path() === '/' ? 'active' : ""}}"
                    href="/" accesskey="1" title="">Home</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link {{ Request::path() === 'profile' ? 'active' : ""}}"
-                   href="/profile" accesskey="1" title="">Profile</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {{ Request::path() === 'grade' ? 'active' : ""}}"
-                   href="/grade" accesskey="1" title="">Dashboard</a>
-            </li>
+
             <li class="nav-item">
                 <a class="nav-link {{ Request::path() === 'article' ? 'active' : ""}}"
                    href="/article" accesskey="1" title="">Blog</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link {{ Request::path() === 'instaFeed' ? 'active' : ""}}"
-                   href="/instaFeed" accesskey="1" title="">Instagram Feed</a>
-            </li>
+            {{--            <li class="nav-item">--}}
+            {{--                <a class="nav-link {{ Request::path() === 'profile' ? 'active' : ""}}"--}}
+            {{--                   href="/profile" accesskey="1" title="">Profile</a>--}}
+            {{--            </li>--}}
+
+            {{--            <li class="nav-item">--}}
+            {{--                <a class="nav-link {{ Request::path() === 'instaFeed' ? 'active' : ""}}"--}}
+            {{--                   href="/instaFeed" accesskey="1" title="">My pictures</a>--}}
+            {{--            </li>--}}
+
+
         </ul>
+
         <ul class="navbar-nav ml-auto">
             <!-- Authentication Links -->
             @guest
@@ -82,8 +83,8 @@
 
 @yield("content")
 
-{{--bootstrap--}}
 
+{{--bootstrap--}}
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
@@ -94,6 +95,4 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 </body>
-
-
 </html>

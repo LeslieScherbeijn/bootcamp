@@ -13,29 +13,23 @@ Route::post('/2fa', function () {
 //The route to the home page on
 //the site
 Route::get('/', function () {
-//    abort("500");
     return view('welcome');
 });
 
 
-//The route to the profile page on the
-//site
-Route::get('/profile', function () {
-    return view('profile', [
-        'articles' => App\Article::latest()->get()
-    ]);
-});
+////The route to the profile page on the
+////site
+//Route::get('/profile', function () {
+//    return view('profile', [
+//        'articles' => App\Article::latest()->get()
+//    ]);
+//});
+//
+//Route::get('/instaFeed', function () {
+//    return view('instaFeed');
+//});
 
-//The route to the dashboard page on the
-//site
-Route::get('/dashboard', function () {
-    return view('dashboard');
-});
 
-//Route to my instagram feed
-Route::get('/instaFeed' , function {
-    return view('instaFeed');
-});
 
 //The routes for the Articles from the
 //Article database

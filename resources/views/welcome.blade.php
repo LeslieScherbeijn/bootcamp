@@ -2,49 +2,90 @@
 
 @section('content')
 
-    <div class="container-fluid d-flex justify-content-center text-center">
+    <div class="container mt-3">
 
-        <div class="card w-100 h-100 p-0 m-0 rounded">
 
-            <div class="card-header bg-dark ">
-                <h1 class="display-Xl-4 headerText">
-                    @auth()
-                        Welcome, {{ Auth::user()->name }}
-                    @else
-                        Welcome
-                    @endauth
-                </h1>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="m-0">
+                    <h1 class="display-XL-4"> Welcome to my page</h1>
+                    <img class=" img-fluid  rounded" src="/assets/images/background/giphy.gif">
+                    <p class="mt-2">Feel free to look around</p>
+                </div>
+                <div>
+
+                    <ul class="nav nav-pills flex-column">
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="https://www.instagram.com/leslie_s2001/"
+                               target="_blank">
+                                <i class="fab fa-instagram icons"></i> My Instagram</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link "
+                               href="https://www.linkedin.com/in/leslie-scherbeijn-020231173/"
+                               target="_blank">
+                                <i class="fab fa-linkedin icons"></i> My LinkedIn</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="https://www.facebook.com/leslie.scherbeijn"
+                               target="_blank">
+                                <i class="fab fa-facebook-square icons"></i> My Facebook</a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link" href="https://github.com/LeslieScherbeijn"
+                               target="_blank">
+                                <i class="fab fa-github icons"></i> My Github</a>
+                        </li>
+                    </ul>
+                    <hr class="d-sm-none">
+                </div>
             </div>
 
-            <div class="card-body text-center">
-
+            <div class="col-sm-8 text-center">
                 <div>
-                    <img class=" img-fluid  rounded mt-5" src="/assets/images/background/giphy.gif">
-                    <p class="display-4 mt-5 ">Feel free to look around</p>
+                    <h1 class="display-XL-4">
+                        Who am I?
+                    </h1>
+
+                    <img class="img-fluid" src="./assets/images/profile/profilepic.jpeg" width="300"
+                         height="500" alt="This is me">
+                    <p class="mt-2">
+                        Hi, my name is Leslie Scherbeijn. I am a 19 year old IT student currently living in the
+                        Netherlands,
+                        welcome to my page
+                    </p>
+                    <hr class="d-sm-none">
                 </div>
 
-                <br>
-
-                <div class="text-center d-flex justify-content-center">
-                    <div class=" col-xs-12 col-md-8">
-                        <a href="https://www.instagram.com/leslie_s2001/" target="_blank">
-                            <i class="fab fa-instagram icons"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/leslie-scherbeijn-020231173/" target="_blank">
-                            <i class="fab fa-linkedin icons"></i>
-                        </a>
-                        <a href="https://www.facebook.com/leslie.scherbeijn" target="_blank">
-                            <i class="fab fa-facebook-square icons"></i>
-                        </a>
-                        <a href="https://github.com/LeslieScherbeijn" target="_blank">
-                            <i class="fab fa-github icons"></i>
-                        </a>
-
+                <div>
+                    <h1 class="display-Xl-4">
+                        My Instagram feed
+                    </h1>
+                    <p>I have a photography account on Instagram, you can find my feed right here. But by all means feel
+                        free to check out my instagram posts and while you're at it, maybe follow me on there.</p>
+                    <!-- Place <div> tag where you want the feed to appear -->
+                    <div id="curator-feed-default-feed-layout">
+                        <a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+        /* curator-feed-default-feed-layout */
+        (function () {
+            var i, e, d = document, s = "script";
+            i = d.createElement("script");
+            i.async = 1;
+            i.src = "https://cdn.curator.io/published/c79a2b60-ae02-4cd0-b8d5-a92edef5d975.js";
+            e = d.getElementsByTagName(s)[0];
+            e.parentNode.insertBefore(i, e);
+        })();
+    </script>
 @endsection
 
 
