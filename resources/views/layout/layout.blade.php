@@ -32,7 +32,7 @@
                 <a class="nav-link {{ Request::path() === 'article' ? 'active' : ""}}"
                    href="/article" accesskey="1" title="">Blog</a>
             </li>
-           
+
 
 
         </ul>
