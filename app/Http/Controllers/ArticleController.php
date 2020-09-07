@@ -10,6 +10,9 @@ class ArticleController extends Controller
 {
 
     //Show every article on a dedicated article page
+    /**
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function index()
     {
         $article = Article::latest()->get();
@@ -19,6 +22,10 @@ class ArticleController extends Controller
 
     //This function shows the articles to the page from the
     //Article database
+    /**
+     * @param Article $article
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function show(Article $article)
     {
         return view('article.show', ['article' => $article]);
@@ -26,6 +33,9 @@ class ArticleController extends Controller
 
     //Here you can create a new article in the
     //Article Database
+    /**
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function create()
     {
         if (Gate::allows('create-article')) {
@@ -37,6 +47,9 @@ class ArticleController extends Controller
 
     //Store the created article in the
     //Article database
+    /**
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
     public function store()
     {
         if (Gate::allows('store-article')) {
@@ -51,6 +64,10 @@ class ArticleController extends Controller
 
     //Edit an existing article within the
     //Article database
+    /**
+     * @param Article $article
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function edit(Article $article)
     {
         if (Gate::allows('edit-article')) {
@@ -62,6 +79,10 @@ class ArticleController extends Controller
 
     //Save the edited article in the
     //Article database
+    /**
+     * @param Article $article
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
     public function update(Article $article)
     {
         if (Gate::allows('update-article')) {
@@ -76,6 +97,11 @@ class ArticleController extends Controller
 
 //Delete an article from the
 //Article database
+    /**
+     * @param Article $article
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     * @throws \Exception
+     */
     public function destroy(Article $article)
     {
         if (Gate::allows('delete-article')) {
